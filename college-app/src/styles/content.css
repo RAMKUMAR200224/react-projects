@@ -1,0 +1,67 @@
+.form-container {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for text inputs only */
+input:not([type="radio"]) {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Crucial: includes padding in the 100% width */
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Radio Button Container */
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.course-option {
+  display: flex;
+  align-items: center; /* Vertically aligns dot and text */
+  margin: 8px 0;
+}
+
+/* Style for the radio circle itself */
+input[type="radio"] {
+  width: auto; /* Overrides global width if any */
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+/* Style for the radio label */
+.course-option label {
+  display: inline;
+  margin: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
