@@ -1,0 +1,288 @@
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-text {
+  padding: 48px 20px;
+}
+
+.section-text .container p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section-text .container p:last-child {
+  margin-bottom: 0;
+}
+
+.section-heading {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+
+.hero__img,
+.grid-a__img-main,
+.grid-a__img-small,
+.video__thumb,
+.grid-b__img-large,
+.grid-b__img-small,
+.grid-c__img,
+.grid-d__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+  background: #c8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.placeholder-img span {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  padding: 8px;
+}
+
+
+.hero {
+  position: relative;
+}
+
+.hero__image-wrap {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero__img {
+  min-height: 500px;
+}
+
+.hero__logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.hero__ableton-wordmark {
+  font-size: 72px;
+  font-weight: 800;
+  color: #ff764d;
+  letter-spacing: 4px;
+  text-shadow: none;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+
+.section-grid-a {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 0;
+  min-height: 380px;
+}
+
+.grid-a__left {
+  height: 380px;
+}
+
+.grid-a__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-a__yellow-block {
+  flex: 0 0 50%;
+  background: #fbffa7;
+}
+
+.grid-a__img-small {
+  flex: 0 0 50%;
+  min-height: 190px;
+}
+
+
+.section-video {
+  width: 100%;
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video__thumb {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+.video__thumb--dark {
+  background: #1a1a1a;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.video__caption {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+  text-align: left;
+}
+
+
+.section-grid-b {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  min-height: 420px;
+}
+
+.grid-b__green-block {
+  background: #b6ffc0;
+}
+
+.grid-b__images {
+  display: grid;
+  grid-template-rows: 60% 40%;
+}
+
+.grid-b__img-large {
+  min-height: 250px;
+}
+
+.grid-b__img-small {
+  min-height: 170px;
+  background: #aaa;
+}
+
+
+.section-grid-c {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  min-height: 360px;
+  margin: 0;
+}
+
+.grid-c__img-wrap {
+  height: 360px;
+  overflow: hidden;
+}
+
+.grid-c__img {
+  width: 100%;
+  min-height: 360px;
+}
+
+.grid-c__purple-block {
+  background: #d5b3ff;
+}
+
+
+.section-grid-d {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 340px;
+  margin: 0 0 48px 0;
+}
+
+.grid-d__img-wrap {
+  height: 340px;
+  overflow: hidden;
+}
+
+.grid-d__img {
+  width: 100%;
+  min-height: 340px;
+}
+
+.grid-d__cta {
+  background: #fbffa7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 40px;
+}
+
+.grid-d__cta p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.cta-link {
+  display: inline-block;
+  color: #0000ff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .section-grid-a,
+  .section-grid-b,
+  .section-grid-c,
+  .section-grid-d {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-a__left,
+  .grid-b__green-block,
+  .grid-c__purple-block {
+    height: 200px;
+    min-height: 200px;
+  }
+
+  .hero__image-wrap {
+    height: 280px;
+  }
+
+  .hero__ableton-wordmark {
+    font-size: 48px;
+  }
+
+  .section-heading {
+    font-size: 19px;
+  }
+
+  .grid-d__cta {
+    padding: 32px 20px;
+  }
+}

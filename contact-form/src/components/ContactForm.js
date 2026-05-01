@@ -46,15 +46,15 @@ export default function ContactForm() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      // Show toast
+      
       setShowToast(true);
 
-      // Hide after 3 seconds
+      
       setTimeout(() => {
         setShowToast(false);
       }, 3000);
 
-      // Reset form
+      
       setForm({
         firstName: "",
         lastName: "",
