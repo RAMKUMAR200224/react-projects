@@ -1,0 +1,149 @@
+.hero {
+  background-color: #d8daf0;
+  padding: 72px 24px 80px;
+  text-align: center;
+}
+ 
+.hero-title {
+  font-family: 'Georgia', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 32px 0;
+  letter-spacing: -0.5px;
+}
+ 
+.search-form {
+  display: flex;
+  align-items: center;
+  max-width: 460px;
+  margin: 0 auto;
+  border: 1.5px solid #bbbcd8;
+  border-radius: 4px;
+  background: white;
+  overflow: hidden;
+}
+ 
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background: transparent;
+}
+ 
+.search-input::placeholder {
+  color: #aaa;
+}
+ 
+.search-btn {
+  background: transparent;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+ 
+.search-btn:hover {
+  opacity: 0.6;
+}
+ 
+/* Cards Section */
+.cards-section {
+  background: #fff;
+  padding: 64px 0 80px;
+}
+ 
+.cards-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 0 48px;
+}
+ 
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 36px 40px 36px 0;
+  border: none;
+}
+ 
+.card:nth-child(odd) {
+  padding-right: 60px;
+  border-right: 1px solid #eee;
+}
+ 
+.card:nth-child(even) {
+  padding-left: 60px;
+  padding-right: 0;
+}
+ 
+.card-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.card-body {
+  flex: 1;
+}
+ 
+.card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+ 
+.card-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+ 
+.card-link {
+  color: #1a56db;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+ 
+.card-link:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+ 
+@media (max-width: 680px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+  .card:nth-child(odd) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .card:nth-child(even) {
+    padding-left: 0;
+  }
+  .hero-title {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,87 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 0 24px;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+ 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+ 
+.logo svg {
+  border-radius: 4px;
+}
+ 
+.logo-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+ 
+.divider {
+  color: #555;
+  font-size: 18px;
+}
+ 
+.help-text {
+  color: #ccc;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+ 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+ 
+.btn-submit {
+  background: transparent;
+  color: white;
+  border: 1.5px solid #555;
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+ 
+.btn-submit:hover {
+  border-color: #999;
+}
+ 
+.btn-signin {
+  background: #1a56db;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+ 
+.btn-signin:hover {
+  background: #1648c0;
+}
+ 
