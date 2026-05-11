@@ -1,0 +1,62 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+:root {
+  --bg-primary: #1a1a1a;
+  --bg-card: #242424;
+  --bg-overlay: rgba(26, 26, 26, 0.92);
+  --text-primary: #ffffff;
+  --text-secondary: #9a9a9a;
+  --text-muted: #666666;
+  --accent-green: #4ade80;
+  --accent-green-bg: #1a3a2a;
+  --accent-yellow: #f5a623;
+  --badge-popular-bg: #f5a623;
+  --badge-popular-text: #1a1a1a;
+  --sold-out: #e05c5c;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --btn-active-bg: #3a3a3a;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius-card: 16px;
+  --radius-badge: 20px;
+  --radius-btn: 8px;
+  --transition: 0.25s ease;
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+ 
+img {
+  display: block;
+  max-width: 100%;
+}
+ 
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+}
+ 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ 
+ul {
+  list-style: none;
+}
