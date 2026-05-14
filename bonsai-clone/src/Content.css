@@ -1,0 +1,129 @@
+.content {
+  padding: 40px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #666;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  font-size: 52px;
+  color: #00b289;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.card ul li {
+  margin: 12px 0;
+  color: #444;
+}
+
+.card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #00b289;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popular .badge {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background: #00b289;
+  color: white;
+  padding: 8px 40px;
+  transform: rotate(45deg);
+  font-size: 12px;
+}
+
+.addons {
+  margin-top: 80px;
+}
+
+.addons h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.addon-box {
+  background: white;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  margin: 80px auto;
+  max-width: 1000px;
+  background: #eaf8f5;
+  padding: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner button {
+  padding: 14px 28px;
+  border: none;
+  background: #00b289;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+}
